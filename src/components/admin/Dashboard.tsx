@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import { Store, LayoutGrid, Users, Settings } from 'lucide-react';
+import { Store, LayoutGrid, Users, Settings as SettingsIcon } from 'lucide-react';
 import StoreManagement from './StoreManagement';
 import Analytics from './Analytics';
 import Settings from './Settings';
@@ -28,7 +28,7 @@ function Dashboard() {
             to="/admin/settings"
             className="flex items-center space-x-2 p-2 hover:bg-gray-100 rounded"
           >
-            <Settings className="w-5 h-5" />
+            <SettingsIcon className="w-5 h-5" />
             <span>Settings</span>
           </Link>
         </nav>
@@ -44,3 +44,5 @@ function Dashboard() {
     </div>
   );
 }
+
+export default Dashboard;
