@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, ShoppingCart } from 'lucide-react';  // Keeping the ShoppingCart import
+import { X, ShoppingCart } from 'lucide-react';
 import { useStore } from '../store';
 import ProductGrid from './ProductGrid';
 
@@ -28,5 +28,3 @@ function StoreModal() {
     </div>
   );
 }
-
-export default StoreModal;
